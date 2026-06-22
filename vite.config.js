@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
-  base: '/Psychologist-Esther-Savina-V2',
+  base: '/Psychologist-Esther-Savina-V2/',
 
   resolve: {
     alias: {
