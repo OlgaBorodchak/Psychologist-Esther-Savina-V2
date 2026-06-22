@@ -1,0 +1,49 @@
+.branch-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.branch-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: min(600px, 55%);
+  height: auto;
+  opacity: 0.10;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.service,
+.approach {
+  position: relative;
+  z-index: 1;
+}
+
+.service {
+  padding-block: var(--section-padding);
+  border-block: 1px solid var(--border);
+  text-align: center;
+}
+
+.chips {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.chip {
+  border: 1px solid var(--border);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4px;
+  padding: 0.625em 1.125em;
+  font-size: var(--fs-sm);
+  color: var(--text-mid);
+  transition: transform .2s;
+}
+
+.chip:hover {
+  transform: translateY(-2px);
+}

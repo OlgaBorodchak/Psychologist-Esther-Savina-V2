@@ -1,0 +1,129 @@
+.approach {
+  padding-block: var(--section-padding);
+  text-align: center;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5em;
+  position: relative;
+  margin-top: 2em;
+}
+
+.steps::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: calc(10% + 22px);
+  right: calc(10% + 22px);
+  height: 1px;
+  background: var(--border);
+  z-index: 0;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.step-num {
+  width: 2.75em;
+  height: 2.75em;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--gold);
+  font-size: clamp(0.875rem, 0.188vw + 0.831rem, 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.step-body {
+  position: relative;
+}
+
+.step:not(:first-child) .step-body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -12px;
+  width: 1px;
+  background: var(--border);
+}
+
+.step-title {
+  font-size: 1.3rem;
+  font-weight: var(--fw-medium);
+  color: var(--text);
+  margin-bottom: 0.5em;
+}
+
+.step-text {
+  font-size: var(--fs-sm);
+  color: var(--text-m);
+  line-height: 1.65;
+}
+
+@media (max-width: 860px) {
+  .steps {
+    gap: 1em;
+  }
+
+  .step-text {
+    font-size: var(--fs-xs);
+  }
+}
+
+@media (max-width: 640px) {
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 340px;
+    margin: 2em auto;
+  }
+
+  .steps::before {
+    display: none;
+  }
+
+  .step {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1.25em;
+  }
+
+  .step-num {
+    margin-bottom: 0;
+  }
+
+  .step-body {
+    flex: 1;
+  }
+
+  .step:not(:first-child) .step-body::before {
+    display: none;
+  }
+
+  .step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 44px;
+    bottom: -32px;
+    left: 21px;
+    width: 1px;
+    background: var(--border);
+  }
+}

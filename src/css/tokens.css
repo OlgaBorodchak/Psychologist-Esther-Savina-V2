@@ -1,0 +1,49 @@
+:root {
+  /* ── Color: Brand ── */
+  --sage:         #6D7163;   /* primary accent — 3.43:1 on white (AA large/UI) */
+  --sage-dark:    #5E6350;   /* 6.22:1 — AA, safe for text */
+  --sage-mid:     #ABAE98;   /* lighter tint for borders, secondary icons */
+  --sage-light:   #EFEEE6;   /* very light section backgrounds */
+  --sage-bg:      #6B7058;   /* dark section bg — 5.14:1, AA for white text on it */
+
+  --gold:         #B18B44;   /* decorative/eyebrow — 3.16:1 (AA large/UI only) */
+  --gold-dark:    #92700F;   /* body-text gold — 4.62:1 (AA) */
+  --gold-light:   #D4A96A;   /* tints, borders */
+
+  /* ── Color: Neutrals ── */
+  --bg:           #FAFAF7;   /* page background */
+  --bg-white:     #FFFFFF;
+  --bg-warm:      #F9F8F6;   /* warm section background */
+  --bg-muted:     #D5D7CF;   /* muted sage-grey section bg */
+
+  --text: #242424; /* 12.08:1 — body copy */
+  --text-mid: #5a5248; /*  7.68:1 — secondary text */
+  --text-soft: #7a7168; /*  4.78:1 — captions, placeholders */
+
+  --border: #e8e0d8;
+
+  /* ── Typography: Families ── */
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: "Montserrat", sans-serif;
+
+  /* ── Typography: Scale (fluid) ── */
+  --fs-hero: clamp(4rem, 8vw, 8rem);
+  --fs-h1: clamp(3rem, 6vw, 5rem);
+  --fs-h2: clamp(2.25rem, 4vw, 3.5rem);
+  --fs-h3: 2rem;
+  --fs-lg: 1.25rem;
+  --fs-base: 1rem;
+  --fs-sm: 0.875rem;
+  --fs-xs: 0.75rem;
+  --fs-xxs: 0.625rem; 
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  /* ── Layout ── */
+  --section-padding: clamp(4rem, 8vw, 7rem);
+  --container-padding: 2em;
+  --header-height: 7em;
+
+}

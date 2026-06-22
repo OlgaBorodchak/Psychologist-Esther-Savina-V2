@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  -webkit-tap-highlight-color: transparent;
+  scrollbar-gutter: stable;
+}
+
+body {
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  font-family: var(--font-body);
+  color: inherit;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.container {
+  width: min(1440px, 100%);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: var(--fs-sm);
+  letter-spacing: .2em;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: var(--fw-regular);
+
+}
+
+.section-title span {
+  font-style: italic;
+  color: var(--sage);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--text);
+  font-size: var(--fs-xs);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.75em 1.375em;
+  border-radius: 4px;
+  transition: all .2s;
+}
+
+
+.btn:hover {
+  background: var(--text);
+  color: hsl(0, 0%, 100%);
+}
+
+.accent-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sage);
+  border: 1px solid var(--sage);
+  color: hsl(0, 0%, 100%);
+  font-size: var(--fs-xs);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.75em 1.375em;
+  border-radius: 4px;
+  transition: all .2s;
+}
+
+.accent-btn:hover {
+  background-color: var(--sage-dark);
+  border-color: var(--sage-dark);
+}
+
+.brand-name {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: var(--fw-medium);
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: 0.01em;
+}

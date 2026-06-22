@@ -1,0 +1,101 @@
+.education {
+  padding-block: var(--section-padding);
+  background-color: var(--bg);
+}
+
+.education-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diplomas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.diploma {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: left;
+  transition:
+    box-shadow 0.25s,
+    transform 0.2s;
+  cursor: pointer;
+}
+
+.diploma:hover {
+  box-shadow: 0 10px 28px rgba(44, 40, 32, 0.1);
+  transform: translateY(-3px);
+}
+
+.thumb {
+  aspect-ratio: 4 / 3;
+}
+
+.thumb-one {
+  background: url(../assets/diplom.jpg) no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+}
+
+.thumb-two {
+  background: url(../assets/WA0004.jpg) no-repeat;
+  object-fit: contain;
+  background-size: 100%;
+}
+.thumb-three {
+  background: url(../assets/WA0005.jpg) no-repeat;
+  background-size: 100%;
+}
+.thumb-four {
+  background: url(../assets/WA0006.jpg) no-repeat;
+  background-size: 100%;
+}
+.thumb-five {
+  background: url(../assets/WA0007.jpg) no-repeat;
+  background-size: 100%;
+}
+.thumb-six {
+  background: url(../assets/WA0008.jpg) no-repeat;
+  background-size: 100%;
+}
+.thumb-seven {
+  background: url(../assets/WA0009.jpg) no-repeat;
+  background-size: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 0.875em 1em;
+}
+
+.name {
+  font-size: var(--fs-xxs);
+  font-weight: var(--fw-semibold);
+  line-height: 1.4;
+}
+
+.org {
+  font-size: var(--fs-xxs);
+  color: var(--text-mid);
+  margin-bottom: 2px;
+  line-height: 1.4;
+}
+
+.year {
+  font-size: var(--fs-xxs);
+  color: var(--text-soft);
+}
+
+@media (max-width: 480px) {
+  .diplomas {
+    grid-template-columns: 1fr;
+  }
+}
